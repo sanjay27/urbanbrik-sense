@@ -38,7 +38,7 @@ export default function ProblemSection() {
                 index >= 3 ? "lg:col-span-1 lg:mx-auto lg:w-full" : ""
               }`}
             >
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500/20 to-pink-500/20 border border-teal-400/20 flex items-center justify-center mb-6 group-hover:from-teal-500/30 group-hover:to-pink-500/30 transition-all duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500/20 to-blue-500/20 border border-teal-400/20 flex items-center justify-center mb-6 group-hover:from-teal-500/30 group-hover:to-blue-500/30 transition-all duration-300">
                 <card.icon className="w-7 h-7 text-teal-400 group-hover:text-teal-300 transition-colors" />
               </div>
               <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl md:text-2xl font-semibold text-teal-100 mb-3">

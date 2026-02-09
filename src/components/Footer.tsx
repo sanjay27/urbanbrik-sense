@@ -14,10 +14,10 @@ export default function Footer() {
               <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold text-teal-300 tracking-tight">
                 UrbanBrik
               </span>
-              <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold text-pink-500 tracking-tight">
+              <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold text-blue-500 tracking-tight">
                 Sense
               </span>
-              <span className="text-pink-400 text-xs align-super">
+              <span className="text-blue-400 text-xs align-super">
                 &#8482;
               </span>
             </div>

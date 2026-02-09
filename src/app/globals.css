@@ -20,12 +20,12 @@
   --color-teal-900: #134e4a;
   --color-teal-950: #042f2e;
 
-  /* Neon Pink palette */
-  --color-pink-300: #f9a8d4;
-  --color-pink-400: #f472b6;
-  --color-pink-500: #ec4899;
-  --color-pink-600: #db2777;
-  --color-pink-700: #be185d;
+  /* Electric Blue palette */
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
 
   /* Dark surfaces */
   --color-dark-bg: #0a0a0f;
@@ -45,7 +45,7 @@ body {
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #5eead4, #f472b6, #5eead4);
+  background: linear-gradient(135deg, #5eead4, #60a5fa, #5eead4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -58,8 +58,8 @@ body {
   background-clip: text;
 }
 
-.gradient-text-pink {
-  background: linear-gradient(135deg, #ec4899, #f472b6);
+.gradient-text-blue {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -80,10 +80,34 @@ body {
   box-shadow: 0 8px 32px rgba(20, 184, 166, 0.15);
 }
 
+/* Hero glass container */
+.hero-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2rem;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.3), rgba(59, 130, 246, 0.3), rgba(45, 212, 191, 0.1));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
 /* Animated gradient border */
 .gradient-border {
   position: relative;
-  background: linear-gradient(135deg, rgba(45, 212, 191, 0.1), rgba(236, 72, 153, 0.1));
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.1), rgba(59, 130, 246, 0.1));
   border-radius: 1.5rem;
 }
 
@@ -93,7 +117,7 @@ body {
   inset: 0;
   border-radius: 1.5rem;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(45, 212, 191, 0.4), rgba(236, 72, 153, 0.4));
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.4), rgba(59, 130, 246, 0.4));
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: xor;
@@ -105,14 +129,14 @@ body {
   box-shadow: 0 0 40px rgba(20, 184, 166, 0.15), 0 0 80px rgba(20, 184, 166, 0.05);
 }
 
-.glow-pink {
-  box-shadow: 0 0 40px rgba(236, 72, 153, 0.15), 0 0 80px rgba(236, 72, 153, 0.05);
+.glow-blue {
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.15), 0 0 80px rgba(59, 130, 246, 0.05);
 }
 
 /* Pulse animation */
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(236, 72, 153, 0.2), 0 0 40px rgba(20, 184, 166, 0.1); }
-  50% { box-shadow: 0 0 40px rgba(236, 72, 153, 0.4), 0 0 80px rgba(20, 184, 166, 0.2); }
+  0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.2), 0 0 40px rgba(20, 184, 166, 0.1); }
+  50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.4), 0 0 80px rgba(20, 184, 166, 0.2); }
 }
 
 .animate-pulse-glow {
@@ -127,6 +151,37 @@ body {
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Slow float variant */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-15px) scale(1.02); }
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+/* Shimmer animation for hero heading */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 4s linear infinite;
+}
+
+/* Rotate gradient animation */
+@keyframes rotate-gradient {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-rotate-slow {
+  animation: rotate-gradient 20s linear infinite;
 }
 
 /* Grid background pattern */

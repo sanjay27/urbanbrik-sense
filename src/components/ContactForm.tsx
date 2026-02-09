@@ -246,7 +246,7 @@ export default function ContactForm() {
 
                   {/* Error message */}
                   {status === "error" && (
-                    <div className="flex items-center gap-2 text-pink-400 text-sm">
+                    <div className="flex items-center gap-2 text-red-400 text-sm">
                       <AlertCircle className="w-4 h-4 shrink-0" />
                       <span>{errorMessage}</span>
                     </div>
@@ -256,7 +256,7 @@ export default function ContactForm() {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="w-full py-4 rounded-full bg-gradient-to-r from-pink-500 to-teal-400 text-white text-base md:text-lg font-semibold hover:from-pink-400 hover:to-teal-300 shadow-lg shadow-pink-500/20 hover:shadow-pink-500/30 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-2"
+                    className="w-full py-4 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 text-white text-base md:text-lg font-semibold hover:from-blue-400 hover:to-teal-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-2"
                   >
                     {status === "loading" ? (
                       <>

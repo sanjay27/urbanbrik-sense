@@ -16,10 +16,10 @@ export default function Navbar() {
             <span className="font-[family-name:var(--font-space-grotesk)] text-xl md:text-2xl font-bold text-teal-300 tracking-tight group-hover:text-teal-200 transition-colors">
               UrbanBrik
             </span>
-            <span className="font-[family-name:var(--font-space-grotesk)] text-xl md:text-2xl font-bold text-pink-500 tracking-tight group-hover:text-pink-400 transition-colors">
+            <span className="font-[family-name:var(--font-space-grotesk)] text-xl md:text-2xl font-bold text-blue-500 tracking-tight group-hover:text-blue-400 transition-colors">
               Sense
             </span>
-            <span className="text-pink-400 text-xs align-super">&#8482;</span>
+            <span className="text-blue-400 text-xs align-super">&#8482;</span>
           </a>
 
           {/* Desktop Nav */}
@@ -35,7 +35,7 @@ export default function Navbar() {
             ))}
             <a
               href="#contact"
-              className="ml-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-pink-500 to-teal-400 text-white text-sm font-semibold hover:from-pink-400 hover:to-teal-300 shadow-lg shadow-pink-500/20 hover:shadow-pink-500/30 transform hover:scale-105 active:scale-95 transition-all duration-200"
+              className="ml-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 text-white text-sm font-semibold hover:from-blue-400 hover:to-teal-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transform hover:scale-105 active:scale-95 transition-all duration-200"
             >
               Get in Touch
             </a>
@@ -69,7 +69,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="block mt-4 text-center px-5 py-3 rounded-full bg-gradient-to-r from-pink-500 to-teal-400 text-white font-semibold shadow-lg shadow-pink-500/20"
+              className="block mt-4 text-center px-5 py-3 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold shadow-lg shadow-blue-500/20"
             >
               Get in Touch
             </a>

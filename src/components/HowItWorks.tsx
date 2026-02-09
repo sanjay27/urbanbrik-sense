@@ -64,20 +64,20 @@ export default function HowItWorks() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: colIndex * 0.15 }}
                 className={`glass-card p-8 transition-all duration-300 ${
-                  column.color === "pink"
-                    ? "border-pink-500/30 animate-pulse-glow"
+                  column.color === "blue"
+                    ? "border-blue-500/30 animate-pulse-glow"
                     : ""
                 }`}
               >
                 {/* Column Header */}
                 <div className="flex items-center gap-3 mb-6">
-                  {column.color === "pink" && (
-                    <Zap className="w-6 h-6 text-pink-400" />
+                  {column.color === "blue" && (
+                    <Zap className="w-6 h-6 text-blue-400" />
                   )}
                   <h3
                     className={`font-[family-name:var(--font-space-grotesk)] text-2xl md:text-3xl font-bold tracking-wide ${
-                      column.color === "pink"
-                        ? "text-pink-400"
+                      column.color === "blue"
+                        ? "text-blue-400"
                         : "text-teal-400"
                     }`}
                   >
@@ -91,8 +91,8 @@ export default function HowItWorks() {
                     <li key={item} className="flex items-center gap-3">
                       <div
                         className={`w-2 h-2 rounded-full shrink-0 ${
-                          column.color === "pink"
-                            ? "bg-pink-400"
+                          column.color === "blue"
+                            ? "bg-blue-400"
                             : "bg-teal-400"
                         }`}
                       />

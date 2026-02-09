@@ -43,12 +43,12 @@ export default function TargetAudience() {
                 className={`w-16 h-16 rounded-2xl mx-auto flex items-center justify-center mb-6 transition-all duration-300 ${
                   index % 2 === 0
                     ? "bg-gradient-to-br from-teal-500/20 to-teal-700/20 border border-teal-400/20 group-hover:from-teal-500/30 group-hover:to-teal-700/30"
-                    : "bg-gradient-to-br from-pink-500/20 to-pink-700/20 border border-pink-400/20 group-hover:from-pink-500/30 group-hover:to-pink-700/30"
+                    : "bg-gradient-to-br from-blue-500/20 to-blue-700/20 border border-blue-400/20 group-hover:from-blue-500/30 group-hover:to-blue-700/30"
                 }`}
               >
                 <card.icon
                   className={`w-8 h-8 ${
-                    index % 2 === 0 ? "text-teal-400" : "text-pink-400"
+                    index % 2 === 0 ? "text-teal-400" : "text-blue-400"
                   } group-hover:scale-110 transition-transform duration-300`}
                 />
               </div>
@@ -61,7 +61,7 @@ export default function TargetAudience() {
               {/* Tagline */}
               <p
                 className={`text-sm font-semibold mb-4 ${
-                  index % 2 === 0 ? "text-teal-400" : "text-pink-400"
+                  index % 2 === 0 ? "text-teal-400" : "text-blue-400"
                 }`}
               >
                 {card.tagline}

@@ -133,7 +133,7 @@ export const pipelineData: PipelineColumn[] = [
   },
   {
     title: "ENGINE",
-    color: "pink",
+    color: "blue",
     items: ["ML Forecasting", "LLM Sentiment", "GIS Commute"],
   },
   {

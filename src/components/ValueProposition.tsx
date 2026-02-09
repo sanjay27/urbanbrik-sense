@@ -57,7 +57,7 @@ export default function ValueProposition() {
 
           {/* Converging lines (visual) */}
           <div className="flex justify-center my-6">
-            <div className="w-px h-12 bg-gradient-to-b from-teal-400/40 to-pink-500/40" />
+            <div className="w-px h-12 bg-gradient-to-b from-teal-400/40 to-blue-500/40" />
           </div>
 
           {/* Central Badge */}
@@ -66,10 +66,10 @@ export default function ValueProposition() {
               whileInView={{ scale: [0.95, 1] }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="px-8 py-5 rounded-2xl bg-gradient-to-r from-teal-500/10 via-pink-500/10 to-teal-500/10 border border-pink-500/30 animate-pulse-glow"
+              className="px-8 py-5 rounded-2xl bg-gradient-to-r from-teal-500/10 via-blue-500/10 to-teal-500/10 border border-blue-500/30 animate-pulse-glow"
             >
               <div className="flex items-center gap-3">
-                <Sparkles className="w-6 h-6 text-pink-400" />
+                <Sparkles className="w-6 h-6 text-blue-400" />
                 <span className="font-[family-name:var(--font-space-grotesk)] text-lg md:text-xl lg:text-2xl font-bold text-white tracking-wide">
                   A LIVING PREDICTIVE MODEL
                 </span>
@@ -95,7 +95,7 @@ export default function ValueProposition() {
                 className={`absolute top-0 left-0 right-0 h-1 ${
                   index % 2 === 0
                     ? "bg-gradient-to-r from-teal-400 to-teal-600"
-                    : "bg-gradient-to-r from-pink-400 to-pink-600"
+                    : "bg-gradient-to-r from-blue-400 to-blue-600"
                 }`}
               />
 
@@ -104,12 +104,12 @@ export default function ValueProposition() {
                   className={`w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 ${
                     index % 2 === 0
                       ? "bg-teal-500/15 border border-teal-400/20"
-                      : "bg-pink-500/15 border border-pink-400/20"
+                      : "bg-blue-500/15 border border-blue-400/20"
                   }`}
                 >
                   <card.icon
                     className={`w-7 h-7 ${
-                      index % 2 === 0 ? "text-teal-400" : "text-pink-400"
+                      index % 2 === 0 ? "text-teal-400" : "text-blue-400"
                     }`}
                   />
                 </div>
@@ -123,7 +123,7 @@ export default function ValueProposition() {
                         className={`text-sm font-bold px-3 py-1 rounded-full ${
                           index % 2 === 0
                             ? "bg-teal-500/15 text-teal-300"
-                            : "bg-pink-500/15 text-pink-300"
+                            : "bg-blue-500/15 text-blue-300"
                         }`}
                       >
                         {card.metric}
