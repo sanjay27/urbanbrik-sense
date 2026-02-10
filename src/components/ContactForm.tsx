@@ -114,10 +114,10 @@ export default function ContactForm() {
                   Email us at
                 </p>
                 <a
-                  href="mailto:sanjay@urbanbrik.co.uk"
+                  href="mailto:contactus@urbanbrik.co.uk"
                   className="text-teal-300 hover:text-teal-200 font-medium text-lg transition-colors"
                 >
-                  sanjay@urbanbrik.co.uk
+                  contactus@urbanbrik.co.uk
                 </a>
               </div>
             </div>
