@@ -82,7 +82,7 @@ export default function HowItWorks() {
                 }`}
               >
                 {/* Column Header */}
-                <div className="flex items-center gap-3 mb-6">
+                <div className={`flex items-center gap-3 mb-6 ${column.color === "blue" ? "justify-center" : ""}`}>
                   {column.color === "blue" && (
                     <Zap className="w-6 h-6 text-blue-400" />
                   )}
@@ -100,7 +100,7 @@ export default function HowItWorks() {
                 {/* Items */}
                 <ul className="space-y-3">
                   {column.items.map((item) => (
-                    <li key={item} className="flex items-center gap-3">
+                    <li key={item} className={`flex items-center gap-3 ${column.color === "blue" ? "justify-center" : ""}`}>
                       <div
                         className={`w-2 h-2 rounded-full shrink-0 ${
                           column.color === "blue"
