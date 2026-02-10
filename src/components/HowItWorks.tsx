@@ -77,12 +77,12 @@ export default function HowItWorks() {
                 transition={{ duration: 0.5, delay: colIndex * 0.15 }}
                 className={`glass-card p-8 transition-all duration-300 ${
                   column.color === "blue"
-                    ? "border-blue-500/30 animate-pulse-glow"
+                    ? "border-blue-500/30 animate-pulse-glow flex items-center justify-center"
                     : ""
                 }`}
               >
                 {/* Column Header */}
-                <div className={`flex items-center gap-3 mb-6 ${column.color === "blue" ? "justify-center" : ""}`}>
+                <div className={`flex items-center gap-3 ${column.items.length > 0 ? "mb-6" : ""} ${column.color === "blue" ? "justify-center" : ""}`}>
                   {column.color === "blue" && (
                     <Zap className="w-6 h-6 text-blue-400" />
                   )}
@@ -98,7 +98,7 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Items */}
-                <ul className="space-y-3">
+                {column.items.length > 0 && <ul className="space-y-3">
                   {column.items.map((item) => (
                     <li key={item} className={`flex items-center gap-3 ${column.color === "blue" ? "justify-center" : ""}`}>
                       <div
@@ -113,7 +113,7 @@ export default function HowItWorks() {
                       </span>
                     </li>
                   ))}
-                </ul>
+                </ul>}
               </motion.div>
             </div>
           ))}

@@ -134,7 +134,7 @@ export const pipelineData: PipelineColumn[] = [
   {
     title: "UrbanBrik AI Sense",
     color: "blue",
-    items: ["ML Forecasting", "LLM Sentiment", "GIS Commute"],
+    items: [],
   },
   {
     title: "OUTPUT",
