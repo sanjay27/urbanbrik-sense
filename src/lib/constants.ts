@@ -96,7 +96,7 @@ export const benefitCards: BenefitCard[] = [
     icon: Home,
     audience: "Families",
     benefit: "Commute + school balancing with clearer, data-driven choices",
-    metric: null,
+    metric: "Happiness 😊",
   },
   {
     icon: TrendingUp,
@@ -108,7 +108,7 @@ export const benefitCards: BenefitCard[] = [
     icon: Brain,
     audience: "Developers",
     benefit: "Smarter launch planning and pricing with real-time demand signals",
-    metric: null,
+    metric: "100% Sold",
   },
 ];
 

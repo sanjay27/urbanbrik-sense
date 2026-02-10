@@ -55,7 +55,7 @@ export default function Footer() {
           {/* Credit line */}
           <div className="mt-8 pt-6 border-t border-white/5 text-center">
             <p className="text-xs text-teal-200/30 font-[family-name:var(--font-inter)]">
-              Presented by Riya Jadhav
+              Founded by Riya Jadhav
             </p>
           </div>
         </div>

@@ -88,7 +88,7 @@ export default function HeroSection() {
               >
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-500/10 border border-teal-400/20 text-teal-300 text-sm font-medium tracking-wide mb-6">
                   <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
-                  Presented by Riya Jadhav
+                  Founded by Riya Jadhav
                 </span>
               </motion.div>
 
@@ -204,7 +204,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 1.0 }}
-                    className="glass-card p-6 border-teal-500/20 hover:border-teal-400/30"
+                    className="glass-card p-6 border-blue-500/30 hover:border-blue-400/40 animate-pulse-glow"
                   >
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-400/20 flex items-center justify-center">
