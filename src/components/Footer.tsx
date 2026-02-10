@@ -1,12 +1,23 @@
+import Image from "next/image";
 import { navItems } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/5">
+    <footer className="relative border-t border-white/5 overflow-hidden">
       {/* Gradient divider */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-500/50 to-transparent" />
 
-      <div className="bg-teal-950/30">
+      {/* Subtle skyline background */}
+      <div className="absolute bottom-0 left-0 right-0 h-[150px] pointer-events-none opacity-15">
+        <Image
+          src="/dubai-skyline.svg"
+          alt=""
+          fill
+          className="object-cover object-bottom"
+        />
+      </div>
+
+      <div className="relative z-10 bg-teal-950/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Logo */}

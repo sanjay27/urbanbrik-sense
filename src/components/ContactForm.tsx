@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Mail, Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { userTypes } from "@/lib/constants";
 
@@ -55,6 +56,17 @@ export default function ContactForm() {
     <section id="contact" className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg via-teal-950/20 to-dark-bg pointer-events-none" />
+
+      {/* Subtle Dubai skyline */}
+      <div className="absolute bottom-0 left-0 right-0 h-[200px] pointer-events-none opacity-20">
+        <Image
+          src="/dubai-skyline.svg"
+          alt=""
+          fill
+          className="object-cover object-bottom"
+        />
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-dark-bg to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}

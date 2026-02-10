@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { audienceCards } from "@/lib/constants";
 
 export default function TargetAudience() {
@@ -8,6 +9,17 @@ export default function TargetAudience() {
     <section id="audience" className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg via-teal-950/30 to-dark-bg pointer-events-none" />
+
+      {/* Subtle Dubai skyline */}
+      <div className="absolute bottom-0 left-0 right-0 h-[250px] pointer-events-none opacity-25">
+        <Image
+          src="/dubai-skyline.svg"
+          alt=""
+          fill
+          className="object-cover object-bottom"
+        />
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-dark-bg to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}

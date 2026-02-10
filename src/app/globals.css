@@ -27,6 +27,10 @@
   --color-blue-600: #2563eb;
   --color-blue-700: #1d4ed8;
 
+  /* Red accent (for problem indicators) */
+  --color-red-400: #f87171;
+  --color-red-500: #ef4444;
+
   /* Dark surfaces */
   --color-dark-bg: #0a0a0f;
   --color-dark-surface: #111118;
@@ -190,6 +194,19 @@ body {
     linear-gradient(rgba(45, 212, 191, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(45, 212, 191, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
+}
+
+/* Section divider line */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(45, 212, 191, 0.3) 20%,
+    rgba(59, 130, 246, 0.3) 50%,
+    rgba(45, 212, 191, 0.3) 80%,
+    transparent 100%
+  );
 }
 
 /* Custom scrollbar */
