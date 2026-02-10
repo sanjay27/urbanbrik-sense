@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Mail, Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Phone, Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { userTypes } from "@/lib/constants";
 
 interface FormState {
@@ -107,17 +107,17 @@ export default function ContactForm() {
 
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 rounded-xl bg-teal-500/15 border border-teal-400/20 flex items-center justify-center">
-                <Mail className="w-6 h-6 text-teal-400" />
+                <Phone className="w-6 h-6 text-teal-400" />
               </div>
               <div>
                 <p className="text-teal-200/50 text-sm font-[family-name:var(--font-inter)]">
-                  Email us at
+                  Call or WhatsApp
                 </p>
                 <a
-                  href="mailto:contactus@urbanbrik.co.uk"
+                  href="tel:+971585827711"
                   className="text-teal-300 hover:text-teal-200 font-medium text-lg transition-colors"
                 >
-                  contactus@urbanbrik.co.uk
+                  +971 58 582 7711
                 </a>
               </div>
             </div>
